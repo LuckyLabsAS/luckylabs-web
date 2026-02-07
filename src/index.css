@@ -36,15 +36,7 @@ body {
 }
 
 .page::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 22px;
-    background: linear-gradient(to bottom, #060606 0%, rgba(6, 6, 6, 0) 100%);
-    pointer-events: none;
-    z-index: 1;
+    display: none;
 }
 
 .panel {
@@ -139,5 +131,20 @@ p {
 @media (max-width: 720px) {
     .panel {
         padding: 1.2rem 1.2rem calc(1.2rem + var(--safe-bottom));
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .page::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 22px;
+        background: linear-gradient(to bottom, #060606 0%, rgba(6, 6, 6, 0) 100%);
+        pointer-events: none;
+        z-index: 1;
+        display: block;
     }
 }
