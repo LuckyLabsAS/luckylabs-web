@@ -1,3 +1,8 @@
+:root {
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --overscroll-bg: #060606;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,12 +10,14 @@
 html,
 body {
     height: 100%;
-    min-height: 100dvh;
+    min-height: 100%;
     margin: 0;
 }
 
 html {
-    background: radial-gradient(circle at 20% 20%, #1f1f1f 0%, #0d0d0d 55%, #060606 100%);
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background: var(--overscroll-bg);
 }
 
 body {
@@ -20,24 +27,34 @@ body {
 }
 
 #root {
-    height: 100%;
-    min-height: 100dvh;
+    min-height: 100%;
 }
 
 .page {
-    height: 100dvh;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    min-height: 100%;
+    position: relative;
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 22px;
+    background: linear-gradient(to bottom, #060606 0%, rgba(6, 6, 6, 0) 100%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .panel {
-    min-height: 100dvh;
+    min-height: calc(100svh - var(--safe-bottom));
     display: grid;
     place-items: center;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    padding: 2rem;
+    padding: 2rem 2rem calc(2rem + var(--safe-bottom));
+    overflow: hidden;
 }
 
 .content {
@@ -116,5 +133,11 @@ p {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 720px) {
+    .panel {
+        padding: 1.2rem 1.2rem calc(1.2rem + var(--safe-bottom));
     }
 }
