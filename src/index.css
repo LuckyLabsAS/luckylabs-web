@@ -5,7 +5,12 @@
 html,
 body {
     height: 100%;
+    min-height: 100dvh;
     margin: 0;
+}
+
+html {
+    background: radial-gradient(circle at 20% 20%, #1f1f1f 0%, #0d0d0d 55%, #060606 100%);
 }
 
 body {
@@ -16,17 +21,18 @@ body {
 
 #root {
     height: 100%;
+    min-height: 100dvh;
 }
 
 .page {
-    height: 100vh;
+    height: 100dvh;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
 .panel {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: grid;
     place-items: center;
     scroll-snap-align: start;
