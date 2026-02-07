@@ -5,15 +5,13 @@ function App() {
         <main className="page">
             <section className="panel hero">
                 <div className="content">
-                    <h1>Lucky Labs</h1>
-                    <p>
-                    </p>
+                    <img className="hero-logo" src="/luckylabs-logo-oneline.svg" alt="Lucky Labs" />
                 </div>
             </section>
 
             <section className="panel teaser">
                 <div className="content">
-                    <h2>Vil du vinne?</h2>
+                    <h2>Vinn</h2>
                     <p>Kommer snart.</p>
                 </div>
             </section>

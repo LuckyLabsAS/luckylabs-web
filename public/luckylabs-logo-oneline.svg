@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 560" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Lucky Labs logo</title>
+  <desc id="logoDesc">Lucky Labs skrevet på en linje, venstrestilt.</desc>
+  <style>
+    .wordmark {
+      fill: #ffffff;
+      font-family: "Avenir Next", "Futura", "Helvetica Neue", sans-serif;
+      font-size: 208px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+  </style>
+  <text class="wordmark" x="120" y="330" text-anchor="start">Lucky Labs.</text>
+</svg>
