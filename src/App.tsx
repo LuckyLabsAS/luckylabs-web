@@ -1,0 +1,38 @@
+function App() {
+    const year = new Date().getFullYear();
+
+    return (
+        <main className="page">
+            <section className="panel hero">
+                <div className="content">
+                    <h1>Lucky Labs</h1>
+                    <p>
+                    </p>
+                </div>
+            </section>
+
+            <section className="panel teaser">
+                <div className="content">
+                    <h2>Vil du vinne?</h2>
+                    <p>Kommer snart.</p>
+                </div>
+            </section>
+
+            <section className="panel footer-panel">
+                <footer className="content footer-content">
+                    <p>
+                        Lucky Labs lager digitale produkter med fokus på enkle,
+                        lekne opplevelser.
+                    </p>
+                    <p>
+                        Kontakt:{" "}
+                        <a href="mailto:dag@luckylabs.no">dag@luckylabs.no</a>
+                    </p>
+                    <small>© {year} Lucky Labs. Alle rettigheter forbeholdt.</small>
+                </footer>
+            </section>
+        </main>
+    );
+}
+
+export default App;
