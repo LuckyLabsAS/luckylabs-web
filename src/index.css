@@ -87,7 +87,7 @@ p {
 }
 
 .teaser h2 {
-    color: #eaff86;
+    color: #dbffee;
 }
 
 .footer-panel {
@@ -105,7 +105,7 @@ p {
 
 .footer-content a {
     color: #f4f4f4;
-    text-decoration-color: rgba(234, 255, 134, 0.8);
+    text-decoration-color: #dbffee;
     text-underline-offset: 0.25rem;
 }
 
