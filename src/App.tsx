@@ -12,7 +12,7 @@ function App() {
             <section className="panel teaser">
                 <div className="content">
                     <h2>Vinn</h2>
-                    <p>Kommer snart.</p>
+                    <p>Kommer snart på App Store og Google Play.</p>
                 </div>
             </section>
 
