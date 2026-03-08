@@ -130,10 +130,82 @@ function App() {
                 </div>
             </section>
 
-            <section className="panel teaser">
-                <div className="content">
-                    <h2>Vinn</h2>
-                    <p>Kommer snart på App Store og Google Play.</p>
+            <section className="panel company-panel">
+                <div className="content company-content">
+                    <h2>Om Lucky Labs AS</h2>
+                    <p>
+                        Lucky Labs AS er et norsk produktselskap som utvikler digitale tjenester
+                        og mobilapper.
+                    </p>
+                    <p>
+                        Vi utvikler for tiden appen <strong>Vinn</strong>, som lanseres på App
+                        Store og Google Play.
+                    </p>
+                    <div className="company-grid">
+                        <article className="company-card">
+                            <h3>Hva vi gjør</h3>
+                            <p>
+                                Vi utvikler og drifter egne digitale produkter, med fokus på
+                                enkle, brukervennlige opplevelser for mobil.
+                            </p>
+                        </article>
+                        <article className="company-card">
+                            <h3>Produkter</h3>
+                            <p>
+                                Vinn (under utvikling) er vår første app og bygges for iOS og
+                                Android.
+                            </p>
+                        </article>
+                        <article className="company-card">
+                            <h3>Kontakt</h3>
+                            <p>
+                                For henvendelser:{" "}
+                                <a href="mailto:dag@luckylabs.no">dag@luckylabs.no</a>
+                            </p>
+                            <p>
+                                <a href={privacyHref}>Personvern</a>
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section className="panel how-panel">
+                <div className="content how-content">
+                    <h2>Fra Idé Til Løsning</h2>
+                    <div className="how-sections">
+                        <article className="how-card">
+                            <h3>Hvordan vi jobber</h3>
+                            <p>
+                                Vi gjør ideer om til virkelighet. Teamet vårt har lang erfaring
+                                fra IT-bransjen og har levert i store og komplekse IT-prosjekter.
+                            </p>
+                            <p>
+                                Grunnlegger Dag Brede Ihle har jobbet som programmerer, teknisk
+                                arkitekt og løsningsarkitekt i over 8 år.
+                            </p>
+                        </article>
+                        <article className="how-card">
+                            <h3>Hvorfor nå</h3>
+                            <p>
+                                Med AI bryter vi ned barrierer og senker terskelen for å få gode
+                                ideer ut i live, samtidig som vi sikrer gode, trygge og skalerbare
+                                løsninger som kommer brukerne til gode.
+                            </p>
+                            <p>
+                                Vi tror at <strong>AIs inntog</strong> gjør digital
+                                produktutvikling stadig mer avhengig av én ting:{" "}
+                                <strong>dyp forståelse for mennesket</strong> som skal bruke
+                                løsningen.
+                            </p>
+                            <p>
+                                Vi <strong>tar hånden på rattet</strong> og realiserer ideer som
+                                tidligere ble stående på vent på grunn av teknisk kompleksitet,
+                                barrierer som nå i stor grad er{" "}
+                                <strong>i ferd med å forsvinne</strong>.
+                            </p>
+                        </article>
+                    </div>
                 </div>
             </section>
 
