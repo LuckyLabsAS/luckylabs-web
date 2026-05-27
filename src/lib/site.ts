@@ -2,10 +2,8 @@
 
 export const VINN_URL = "https://vunnet.no";
 
-// Point store badges at the real App Store / Play URLs once live.
-// vunnet.no itself carries the canonical store links today.
-export const APP_STORE_URL = VINN_URL;
-export const PLAY_STORE_URL = VINN_URL;
+// Real App Store link — derived from the Vinn app's ascAppId (6763910039) in eas.json.
+export const APP_STORE_URL = "https://apps.apple.com/app/id6763910039";
 
 export const CONTACT_EMAIL = "dag@luckylabs.no";
 export const ORG_NR = "937146639";

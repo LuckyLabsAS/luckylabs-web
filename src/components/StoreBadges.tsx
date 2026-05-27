@@ -1,5 +1,5 @@
-import { AppleIcon, GooglePlayIcon } from "./icons";
-import { APP_STORE_URL, PLAY_STORE_URL } from "../lib/site";
+import { AppleIcon } from "./icons";
+import { APP_STORE_URL } from "../lib/site";
 
 export function StoreBadges() {
     return (
@@ -9,13 +9,6 @@ export function StoreBadges() {
                 <span className="store-badge__text">
                     <span className="store-badge__top">Last ned på</span>
                     <span className="store-badge__bottom">App Store</span>
-                </span>
-            </a>
-            <a className="store-badge" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">
-                <GooglePlayIcon className="store-badge__icon" />
-                <span className="store-badge__text">
-                    <span className="store-badge__top">Hent den på</span>
-                    <span className="store-badge__bottom">Google Play</span>
                 </span>
             </a>
         </div>
